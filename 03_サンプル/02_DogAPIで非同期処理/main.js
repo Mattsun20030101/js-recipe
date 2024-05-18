@@ -5,6 +5,6 @@ fetch("https://dog.ceo/api/breeds/image/random")
   .then((res) => {
     return res.json() // 結果を json として読み込む
   })
-  .then((data) => {
-    imageElement.src = data.message // 画像を表示する
+  .then((deta) => {
+    imageElement.src = deta.message // 画像を表示する
   })

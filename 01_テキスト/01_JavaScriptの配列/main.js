@@ -3,6 +3,20 @@ const karappo = []
 console.log(karappo) // => []
 
 // SECTION: 配列のアクセス
+const taiikuSeiseki = [1, 3, 5]
+console.log(taiikuSeiseki)
+
+const barabara = ["とーや", 3, "やすなり"]
+console.log(barabara)
+
+const toyaBijutsu = 1
+const ryotaBijutsu = 3
+const yasunariBijutsu = 5
+
+const BijutsuSeiseki = [toyaBijutsu, ryotaBijutsu, yasunariBijutsu]
+console.log(BijutsuSeiseki)
+
+
 
 // 配列の中にオブジェクトを入れて成績簿を表す
 const seisekibo = [
@@ -26,10 +40,11 @@ console.log(seisekibo.length) // => 3
 // SECTION 配列とループ
 
 // 配列の要素の数だけループする
-for (let i = 0; i < seisekibo.length; i++) {
-  console.log(i + "番目の要素は ", seisekibo[i])
+for (let i = 0; i < seisekibo.length; i++){
+  console.log(i + "番目の要素は", seisekibo[i])
+  
 }
-
+console.log(seisekibo[seisekibo.length - 1])
 // SECTION 要素の追加
 
 const aisatsu = ["おはよう", "こんにちは"]
@@ -39,15 +54,16 @@ console.log(aisatsu) // => ['おはよう', 'こんにちは', 'こんばんは'
 // SECTION その他の操作
 
 // 任意の要素が含まれているか判定する
-const isExist = aisatsu.includes("おはよう")
-console.log(isExist) // => true
+const number = aisatsu.includes("こんにちは")
+console.log(number)
+// => true
 
 // 任意の要素を検索して取得する
-const value = aisatsu.find("こんにちは")
+const value = aisatsu.find["おはよう"]
 console.log(value) // => "こんにちは"
 
 // 任意の位置の要素を操作する
-const index = aisatsu.findIndex("こんにちは")
+const index = aisatsu.findIndex["こんにちは"]
 aisatsu[index] = "やあ"
 console.log(aisatsu) // => ['おはよう', 'やあ', 'こんばんは']
 
@@ -57,8 +73,8 @@ console.log(aisatsu) // => ['おはよう', 'こんばんは']
 
 // SECTION 配列の展開
 const irohaIchinodan = ["い", "ろ", "は", "に", "ほ", "へ", "と"]
-const irohaNinodan = ["ち", "り", "ぬ", "る", "を"]
+const irohaNinodan = ["いち", "ち"]
 
 const ichinodanToNinodan = [...irohaIchinodan, ...irohaNinodan]
 
-console.log(ichinodanToNinodan) // => ['い','ろ','は','に','ほ','へ','と','ち','り','ぬ','る','を']
+console.log(ichinodanToNinodan)// => ['い','ろ','は','に','ほ','へ','と','ち','り','ぬ','る','を']
